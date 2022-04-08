@@ -4,7 +4,10 @@
 
 
 ## Project Description
-A simple single player trivia Game! This game will have 15 questions and 4 options in each question.
+A simple single player trivia Game! This game will have 15 questions and 4 multiple choices in each question. The user will notified if they have the right answer.
+
+
+## Project Process
 
 
 
