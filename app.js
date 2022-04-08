@@ -4,7 +4,7 @@ const startButton = document.getElementById('start-btn')
 
 startButton.addEventListener('click', startGame)
 
-function StartGame() {
+function startGame() {
     console.log('start')
     startButton.Button.classList.add('hide')
 }
