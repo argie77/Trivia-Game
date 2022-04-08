@@ -1,4 +1,4 @@
-#Trivia Game!
+##3Trivia Game!
 
 ![Image] ()
 
@@ -11,15 +11,15 @@ A simple single player trivia Game! This game will have 15 questions and 4 multi
 
 
 
-#User
+##User
 - As a user, I want to have options for the answer.
 - As a user, I want to be able to know if I have the right answer or not.
 - As a user, I want to be able to go to the next question.
 
-#MVP 
+##MVP 
 
 
-#Stretch Goals
+##Stretch Goals
 - As a user, I want to keep track on my scores.
 - As a user, I want to know the right answer.
 
