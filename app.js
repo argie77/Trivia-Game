@@ -1,3 +1,4 @@
+var score = 0
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const previousButton = document.getElementById('previous-btn')
@@ -8,6 +9,8 @@ const buttonA = document.getElementById('btn-A')
 const buttonB = document.getElementById('btn-B')
 const buttonC = document.getElementById('btn-C')
 const buttonD = document.getElementById('btn-D')
+const playerScore = document.getElementById('score')
+
 
 let shuffledQuestions
 let currentQuestionIndex
@@ -65,12 +68,15 @@ function resetState() {
 
 function selectAnswer(e) {
     console.log(e.target.innerText)
-if (e.target.innerText === shuffledQuestions[currentQuestionIndex].answer)
-{console.log("right")
-currentQuestionIndex++}
-else {console.log("wrong")
-console.log(e.target.innerText)
-console.log(shuffledQuestions[currentQuestionIndex].answer)
+    if (e.target.innerText === shuffledQuestions[currentQuestionIndex].answer){
+        console.log("right")
+        currentQuestionIndex++
+        score++
+        playerScore.innerHTML = score;
+    }else {
+        console.log("wrong")
+    // console.log(e.target.innerText)
+    // console.log(shuffledQuestions[currentQuestionIndex].answer)
 }
    // const selectedButton = e.target
    // const correct = selectedButton.dataset.correct
@@ -88,6 +94,23 @@ function setStatusClass(element, correct) {
         element.classList.add('wrong')
     }
 }
+
+function clearStatusClass(element) {
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
+}
+
+// function handleClickAnswer(value,answer){
+//     console.log(value,answer)
+//     if(value === answer){
+//         score++
+//         playerScore.innerHTML = score;
+//         console.log(score)
+//     } else {
+//         console.log('false')
+//      }
+//      incrementIndex()
+//     }
 
 
 const questions = [
