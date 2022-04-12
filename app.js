@@ -72,7 +72,9 @@ function selectAnswer(e) {
         console.log("right")
         currentQuestionIndex++
         score++
+        console.log("incrementIndex")
         playerScore.innerHTML = score;
+        incrementIndex()
     }else {
         console.log("wrong")
     // console.log(e.target.innerText)
@@ -98,6 +100,18 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
+}
+
+function incrementIndex() {
+    console.log(score)
+    if (score === 7) {
+window.alert("Win Win!")}
+    // else if (currentQuestionIndex < questions.length - 1){
+    //     currentQuestionIndex = currentQuestionIndex +1
+    // }
+    // } else if (index === data.length - 1) {
+    //     window.alert("Win Win!")
+    // }
 }
 
 // function handleClickAnswer(value,answer){
@@ -127,7 +141,7 @@ const questions = [
 {
     question: "Which country is known as the Land of White Elephant?",
     options: ["Vietnam", "thailand", "Philippines", "Macao"],
-    answer: "Thailand",
+    answer: "thailand",
 },
 {
     question: "Which planet is the hottest in the solar system?",
@@ -167,7 +181,7 @@ const questions = [
 {
     question: "Which country invented ice cream?",
     options: ["Japan", "China", "South Korea", "Macao"],
-    answer: "china",
+    answer: "China",
 },
 {
     question: "What sport is dubbed the king of sports?",
@@ -187,6 +201,6 @@ const questions = [
 {
     question: "Area 51 is located in which U S state??",
     options: ["Nevada", "Maine", "New York", "New Jersey"],
-    answer: "Asia",
+    answer: "Nevada",
 }
 ];
