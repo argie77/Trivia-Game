@@ -28,7 +28,8 @@ A simple single player trivia Game! This game will have 15 questions and 4 multi
 
 ## MVP Wireframes
 
-## Buttons
+## Buttons<img width="679" alt="Screen Shot 2022-04-12 at 1 39 47 PM" src="https://user-images.githubusercontent.com/9922785/163021966-86cf05b5-0f44-4bf4-bb7b-54dfad1a8f52.png">
+
 There are 3 buttons of start to start the game, next to move to next question and previous to go back to old question.
 
 
