@@ -46,7 +46,21 @@ function resetState() {
 
 
 function selectAnswer() {
+    const selectedButton = e.target
+    const correct = se;ectedButton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(answerButtonsElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
+    })
+}
 
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
+    }
 }
 
 const questions = [
@@ -54,7 +68,9 @@ const questions = [
         question: 'What is the rarest M&M color?',
         answers: [
             { text: 'Brown', correct: true },
-            { text: 'green', correct: false }
+            { text: 'green', correct: false },
+            { text: 'yellow', correct: false },
+            { text: 'orange', correct: false }
         ]
     }
 ]
