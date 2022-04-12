@@ -163,5 +163,30 @@ const questions = [
     question: "What is the rarest M&M color?",
     options: ["green", "yellow", "brown", "orange"],
     answer: "green",
+},
+{
+    question: "Which country invented ice cream?",
+    options: ["Japan", "China", "South Korea", "Macao"],
+    answer: "china",
+},
+{
+    question: "What sport is dubbed the king of sports?",
+    options: ["Badminton", "Basketball", "American Football", "Soccer"],
+    answer: "Soccer",
+},
+{
+    question: "How many colors are there in the rainbow?",
+    options: ["12", "7", "9", "5"],
+    answer: "7",
+},
+{
+    question: "What is Earth's largest continent?",
+    options: ["Europe", "Asia", "Antartica", "Africa"],
+    answer: "Asia",
+},
+{
+    question: "Area 51 is located in which U S state??",
+    options: ["Nevada", "Maine", "New York", "New Jersey"],
+    answer: "Asia",
 }
 ];
