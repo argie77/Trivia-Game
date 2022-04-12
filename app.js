@@ -45,7 +45,7 @@ function resetState() {
 }
 
 
-function selectAnswer() {
+function selectAnswer(e) {
     const selectedButton = e.target
     const correct = se;ectedButton.dataset.correct
     setStatusClass(document.body, correct)
@@ -65,13 +65,53 @@ function setStatusClass(element, correct) {
 
 const questions = [
     {
-        question: 'What is the rarest M&M color?',
-        answers: [
-            { text: 'Brown', correct: true },
-            { text: 'green', correct: false },
-            { text: 'yellow', correct: false },
-            { text: 'orange', correct: false }
-        ]
-    }
-]
-
+    question: "What is the rarest M&M color?",
+    options: ["green", "yellow", "brown", "orange"],
+    answer: "brown",
+},
+{
+    question: "How many ribs are in a human body?",
+    options: ["24", "10", "14", "28"],
+    answer: "24",
+},
+{
+    question: "Which country is known as the Land of White Elephant?",
+    options: ["Vietnam", "thailand", "Philippines", "Macao"],
+    answer: "Thailand",
+},
+{
+    question: "Which planet is the hottest in the solar system?",
+    options: ["Mars", "Pluto", "Venus", "Saturn"],
+    answer: "Venus",
+},
+{
+    question: "Which country produces the most coffee in the world?",
+    options: ["Brazil", "Mexico", "El Salvador", "Dominican Republic"],
+    answer: "Brazil",
+},
+{
+    question: "What is the smallest country in the world?",
+    options: ["Japan", "Vatican City", "Korea", "Norway"],
+    answer: "Vatican City",
+},
+{
+    question: "How many hearts does an octopus have?",
+    options: ["5", "2", "7", "3"],
+    answer: "3",
+},
+{
+    question: "How many eyes does a bee have?",
+    options: ["5", "9", "7", "3"],
+    answer: "5",
+},
+{
+    question: "Water has a pH level of around??",
+    options: ["11", "9", "7", "3"],
+    answer: "7",
+},
+{
+    question: "What is the rarest M&M color?",
+    options: ["green", "yellow", "brown", "orange"],
+    answer: "green",
+}
+];
