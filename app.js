@@ -1,4 +1,4 @@
-//
+//Variables
 var score = 0
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
@@ -16,6 +16,8 @@ const playerScore = document.getElementById('score')
 let shuffledQuestions
 let currentQuestionIndex
 
+
+//These are grabbing the elements from HTML
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', setNextQuestion)
 buttonA.addEventListener('click', selectAnswer)
@@ -37,6 +39,7 @@ function startGame() {
 function setNextQuestion() {
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
+
 
 function showQuestion(question) {
     console.log(question)
@@ -89,6 +92,7 @@ function selectAnswer(e) {
 //     })
  }
 
+ //This function is to let us know whether the option that was clicked is right or wrong
 function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
@@ -102,11 +106,12 @@ function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
-
+// This will show the pop up window after 7 questions right
 function incrementIndex() {
     console.log(score)
     if (score === 7) {
 window.alert("Win Win!")}
+
     // else if (currentQuestionIndex < questions.length - 1){
     //     currentQuestionIndex = currentQuestionIndex +1
     // }
@@ -128,6 +133,7 @@ window.alert("Win Win!")}
 //     }
 
 
+//array of questions
 const questions = [
     {
     question: "What is the rarest M&M color?",
