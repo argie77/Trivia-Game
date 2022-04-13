@@ -32,8 +32,10 @@ A simple single player trivia Game! This game will have 15 questions and 4 multi
 
 
 
+
 ## Buttons
 
 There are 3 buttons of start to start the game, next to move to next question and previous to go back to old question.
 
+<img width="1288" alt="Screen Shot 2022-04-12 at 8 07 26 PM" src="https://user-images.githubusercontent.com/9922785/163074288-996ae9e9-6f2f-49ec-a812-77e7be7a3d4f.png">
 
